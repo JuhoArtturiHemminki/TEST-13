@@ -42,7 +42,8 @@ Isolates the hidden geometric friction coefficient generated when a circular wav
 *   **Validated Output:** `0.00141631`
 *   **Bit-Level Analysis:** $\Delta E$ represents the exact mathematical origin of phonon scattering inside classical semiconductors. When $\lim \Delta E \to 0$, structural decoherence vanishes.
 
-### Test 3: The Phase-Valve Resonant Quantum Lock ($\cos(H_c/\Phi)$)
+### Test 3: The Phase-Valve Resonant Quantum Lock ($$\cos(H_c / \Phi)$$)
+
 Audits the logic gate mechanics to verify if phase-interference can establish a geometric wall to block phonon propagation.
 *   **Equation:** 
     $$\theta_{\text{lock}} = \cos\left( \frac{H_c}{\Phi} \right)$$
