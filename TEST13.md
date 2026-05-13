@@ -87,9 +87,11 @@ $$\mathcal{R}_m = \text{DSP}(\text{alias}) [ (f_s \cdot 10^6) \pmod{880} ] = \te
 * Bit-Level System Synthesis: The resulting effective remainder matches the precise acoustic profile of the **C5 pitch standard** ($\approx 523.25 \text{ Hz}$) within its resonant bandwidth. This confirms a cross-harmonic link between megahertz digital clocking and macro-scale acoustic lattice vibrations, preventing structural back-propagation scattering.
 
 ### Test 8: Sessional Voltage Cross-Scaling ($V_{\text{scale}}$)
+
 Validates the dynamic voltage compensation profile required to clean up microscopic oxide layer trace impurities.
-*   **Equation:** 
-    $$V_{\text{scale}} = V_c \cdot \left( \frac{\mathcal{R}_m}{\text{C5}_{\text{ideal}}} \right)$$
+
+$$V_{\text{scale}} = V_c \cdot \left( \frac{\mathcal{R}_m}{\text{C5(ideal)}} \right)$$
+
 *   **64-Bit Evaluation:** $1.1709 \cdot (525.467 / 523.251)$
 *   **Validated Output:** `1.1758 V` $\to$ Scaling constant $1 + \frac{\Phi}{\pi} \approx \mathbf{1.8842}$
 *   **Bit-Level Analysis:** The sessional voltage ratio maps directly to the exact chemical threshold required to suppress interstitial oxygen background noise inside intrinsic semiconductors.
